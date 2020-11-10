@@ -14,5 +14,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    //return view('welcome');
+    return View::first(['custom.admin', 'admin'], $data);
+});
+
+Route::get('home', function(){
+    return view('home'); //route qui affiche le id mdp
+});
+
+Route::get('cache', function(){
+    return Cache::get('key');
 });
