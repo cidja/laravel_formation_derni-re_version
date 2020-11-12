@@ -67,7 +67,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'Europe/Paris', //pour sélectionner l'heure de son serveur que l'on veut afficher
 
     /*
     |--------------------------------------------------------------------------
