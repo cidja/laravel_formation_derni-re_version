@@ -12,11 +12,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/', function(){
-    return view('home');
+    return view('pages/home'); //on peut aussi utiliser un . ça fonctionne comme le / pour accéder au sous-dossier
 });
 
 Route::get('/about-us', function(){
-    return view('about');
+    return view('pages/about');
 });
 
 /*Route::get('home', function(){
