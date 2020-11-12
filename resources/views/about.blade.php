@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Hello city</title>
+        <title>About us | Hello city</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -21,12 +21,11 @@
         </style>
     </head>
     <body>
-          <h1>Hello from France</h1>
-
-          <p>It's currently {{ date('d-M-Y')}} and time is {{ date(DATE_RSS) }} </p>
-
+        <p>Built with &hearts; by Chrichi</p>
+         
+         <p><a href="/">Retourner à la page d'accueuil</a> 
         <footer>
-           <p>&copy; Copyright {{date('Y')}} &middot; <a href="/about-us">About Us</a></p>
+            <p>&copy; Copyright {{date('Y')}} &middot; <a href="/about-us">About Us</a></p>
         </footer>
     </body>
 </html>
