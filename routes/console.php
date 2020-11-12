@@ -17,3 +17,7 @@ use Illuminate\Support\Facades\Artisan;
 Artisan::command('inspire', function () {
     $this->comment(Inspiring::quote());
 })->purpose('Display an inspiring quote');
+
+Artisan::command('test', function(){ //https://youtu.be/vm6rGJW9KIo?t=1014
+    $this->comment('ceci est mon test');
+})->purpose('Ceci est mon premier test');

@@ -25,3 +25,7 @@ Route::get('home', function(){
 Route::get('cache', function(){
     return Cache::get('key');
 });
+
+Route::get('ref', function(){
+    return View('ref');
+});
