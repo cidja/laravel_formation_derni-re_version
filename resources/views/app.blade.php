@@ -4,7 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Hello city</title>
+        <title>
+            @yield('title', 'ceci est le contenu par défaut si pas de contenu')
+        </title>
 
         
     </head>
