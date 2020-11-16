@@ -5,13 +5,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>
-            @yield('title', env('APP_NAME'))
+            @yield('title', config('app.name'))
         </title>
 
         
     </head>
-    <body>i
+    <body>
         @yield('content')
+        <!--Pour accéder à une variable de configuration qui se trouve dans app !-->
+        {{ config('app.name')}} 
+        <!--Pour vérifier ce que retourne la fonction on utilise dump !-->
+        {{ dump(config('database.connections.sqlite.dirver'))}}
 
         <footer>
            <p>&copy; Copyright {{date('Y')}} &middot; <a href="/about-us">About Us</a></p>
