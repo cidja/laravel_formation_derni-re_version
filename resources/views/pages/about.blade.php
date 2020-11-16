@@ -6,5 +6,5 @@
 
         <p>Built with &hearts; by Chrichi</p>
          
-         <p><a href="/">Retourner à la page d'accueuil</a> 
+         <p><a href="{{ route('home') }}">Retourner à la page d'accueuil</a> 
 @endsection

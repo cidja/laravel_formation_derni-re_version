@@ -13,11 +13,11 @@ use Illuminate\Support\Facades\Route;
 */
 Route::get('/', function(){
     return view('pages/home'); //on peut aussi utiliser un . ça fonctionne comme le / pour accéder au sous-dossier
-});
+})->name('home');
 
 Route::get('/about-us', function(){
     return view('pages/about');
-});
+})->name('about');
 
 /*Route::get('home', function(){
     return view('home'); //route qui affiche le id mdp
