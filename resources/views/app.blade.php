@@ -5,13 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>
-            @yield('title', 'ceci est le contenu par défaut si pas de contenu')
+            @yield('title', env('APP_NAME'))
         </title>
 
         
     </head>
-    <body>
+    <body>i
         @yield('content')
+
         <footer>
            <p>&copy; Copyright {{date('Y')}} &middot; <a href="/about-us">About Us</a></p>
         </footer>
