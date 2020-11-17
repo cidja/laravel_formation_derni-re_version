@@ -1,5 +1,4 @@
 @extends('layouts/app')
-@section('title', config('app.name'))
 
 @section('content')
     <img src="{{ asset('images/nrj.png') }}" alt="logo NRJ">

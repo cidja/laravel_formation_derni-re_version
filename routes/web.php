@@ -23,6 +23,10 @@ Route::get('/about-us', function(){
     return view('home'); //route qui affiche le id mdp
 });*/
 
+Route::get('/help', function(){
+  return view('pages/help');
+})->name('help');
+
 Route::get('cache', function(){
     return Cache::get('key');
 });

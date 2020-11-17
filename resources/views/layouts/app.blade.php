@@ -4,8 +4,13 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <!--Cette écriture en dessous veut dire si $title existe on l'affiche sinon on affiche config('app.name') ça supprime une ligne dans home.blade.php !-->
+          <!--'{'{ $title ?? config('app.name')}} !-->
+        <!--Sinon on fait un ternaire !-->
+        <!-- signifie si $title alors on écrit $title | nom de l'application  : on affiche nom de l'application  link: https://www.youtube.com/watch?v=86A2l9f7-Ng!-->
         <title>
-            @yield('title', config('app.name'))
+          {{ isset($title) ? $title . ' | ' . config('app.name') : config('app.name')}}
+
         </title>
         <!--Utilisation de tailwindcss avec le cdn !-->
         <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">

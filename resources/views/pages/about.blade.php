@@ -1,6 +1,5 @@
-@extends('layouts/app')
+@extends('layouts/app', ['title'=> 'About us'])
 
-@section('title', 'About-us | '. config('app.name'))
 
 @section('content')
   <img src="{{ asset('images/olympics.jpg') }}" alt="logo olympics">
