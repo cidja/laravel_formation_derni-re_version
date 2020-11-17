@@ -14,11 +14,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function(){
     return view('pages/home'); //on peut aussi utiliser un . ça fonctionne comme le / pour accéder au sous-dossier
 })->name('home');
-
+/*
 Route::get('/about-us', function(){
     return view('pages/about');
 })->name('about');
-
+*/
+//On peut écrire la route de plusieurs façons et la plus simple et avec la facade route::View
+Route::View('/about-us', 'pages/about')->name('about'); // =la route écrite au dessus link: https://www.youtube.com/watch?v=4eprrRZ0O-U
 /*Route::get('home', function(){
     return view('home'); //route qui affiche le id mdp
 });*/
